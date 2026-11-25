@@ -1,0 +1,341 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b1018;
+  color: #f5f5f5;
+  font-family: 'DM Sans', 'Noto Sans KR', sans-serif;
+}
+
+button, input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  height: 75px;
+  padding: 0 8%;
+  border-bottom: 1px solid #252b35;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #d7ae57;
+}
+
+.live {
+  color: #a9b0bd;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: #60cb91;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 55px 25px;
+}
+
+.hero {
+  padding: 45px 0 55px;
+}
+
+.eyebrow {
+  color: #d7ae57;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.25;
+  margin: 22px 0;
+  letter-spacing: -2px;
+  color: #f1d18a;
+}
+
+.hero h1 span {
+  color: #d7ae57;
+}
+
+.description {
+  color: #929baa;
+  line-height: 1.9;
+}
+
+.exchange {
+  background: #171f2b;
+  border: 1px solid #303948;
+  border-radius: 15px;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.exchange p {
+  color: #9ba6b7;
+  font-size: 13px;
+}
+
+.exchange h2 {
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.exchange-icon {
+  color: #d7ae57;
+  font-size: 45px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  margin-top: 7px;
+}
+
+.refresh {
+  background: transparent;
+  border: 1px solid #414b59;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.refresh:hover {
+  border-color: #d7ae57;
+  color: #d7ae57;
+}
+
+.metal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.metal-card {
+  border-radius: 16px;
+  padding: 30px;
+  color: #14171c;
+}
+
+.gold-card {
+  background: linear-gradient(135deg, #e9cc82, #b98b37);
+}
+
+.silver-card {
+  background: linear-gradient(135deg, #e5e9ee, #aab5c2);
+}
+
+.metal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metal-symbol {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.metal-name {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.metal-card h3 {
+  font-size: 25px;
+  margin-top: 35px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+.unit {
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-top: 7px;
+}
+
+.card-bottom {
+  border-top: 1px solid #ffffff75;
+  margin-top: 30px;
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.card-bottom strong {
+  font-size: 16px;
+}
+
+.calculator {
+  margin-top: 75px;
+  background: #171f2b;
+  border: 1px solid #303948;
+  border-radius: 16px;
+  padding: 35px;
+}
+
+.calculator h2 {
+  font-size: 27px;
+  margin-top: 12px;
+}
+
+.calc-desc {
+  color: #929baa;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0 25px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #414b59;
+  border-radius: 8px;
+  background: transparent;
+  color: #aab2bf;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #d7ae57;
+  color: #171717;
+  border-color: #d7ae57;
+  font-weight: 800;
+}
+
+.calculator label {
+  display: block;
+  font-size: 13px;
+  color: #aab2bf;
+  margin-bottom: 10px;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 16px;
+  background: #0d131d;
+  border: 1px solid #414b59;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.calculator input:focus {
+  border-color: #d7ae57;
+}
+
+.result {
+  background: #0d131d;
+  border-radius: 10px;
+  padding: 23px;
+  margin-top: 20px;
+}
+
+.result span, .result small {
+  color: #9ba6b7;
+}
+
+.result h2 {
+  color: #e4bd69;
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 30px 0;
+  border-top: 1px solid #303948;
+  color: #7f8998;
+  font-size: 12px;
+  line-height: 2;
+}
+
+footer .logo {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.message {
+  padding: 15px;
+  color: #d7ae57;
+}
+
+.error {
+  color: #ff8888;
+}
+
+@media (max-width: 650px) {
+  main {
+    padding: 30px 17px;
+  }
+
+  .header {
+    padding: 0 17px;
+  }
+
+  .metal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metal-card {
+    padding: 23px;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+
+  .calculator {
+    padding: 23px;
+  }
+
+  .exchange h2 {
+    font-size: 24px;
+  }
+}

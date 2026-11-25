@@ -1,0 +1,3 @@
+
+/gold-api/*  https://api.gold-api.com/:splat  200
+/fx-api/*    https://api.frankfurter.app/:splat  200
